@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   <p>Name received from parent : {{name}}</p>
   <!-- <p>Name received from parent : {{parentData}}</p> -->
 </div>
-  `
+  `,
 })
 export class ChildcomponentComponent {
 @Input('parentData') name = ''

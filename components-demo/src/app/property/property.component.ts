@@ -5,11 +5,13 @@ import { Component } from '@angular/core';
   template: `
   <h3>property works!</h3>
   <button disabled="true">Click me1</button><br><br>
-  <button [disabled]="isDisabled">Click me2</button>
+  <button [disabled]="isDisabled">Click me2</button><br><br>
+  <img [src]="imagePath" width="300" />
   `
 })
 export class PropertyComponent {
 isDisabled=false
+imagePath = "../../assets/car.jpg"
 constructor(){
  setTimeout(()=>{
     this.isDisabled = true

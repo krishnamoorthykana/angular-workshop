@@ -1,0 +1,25 @@
+<div>
+  <div class="row">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter your task here"
+      [(ngModel)]="newTask"
+    />
+  </div>
+  <div class="mt-4">
+    <button type="button" class="btn btn-primary" (click)="addNewTask()">Add Task</button>
+  </div>
+  <div class="mt-4">
+    <h3>Tasks List</h3>
+    <h4 *ngIf="tasks.length==0">No Tasks, add a task to continue</h4>
+      <table class="table table-striped">
+        <tbody>
+        <tr *ngFor="let task of tasks; let i = index;">
+          <td>{{task}}</td>
+          <td><button class="ms-5 btn btn-danger" (click)="removeTask(i)">Delete</button></td>
+        </tr>
+      </tbody>
+      </table>
+  </div>
+</div>

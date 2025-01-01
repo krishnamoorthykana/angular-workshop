@@ -12,6 +12,7 @@ import { TestService } from '../test.service';
 })
 export class CompOneComponent {
   constructor(private test:TestService){}
+  
   logMessage(btn:any){
   let log = new Logging();
   log.logMessage(btn);

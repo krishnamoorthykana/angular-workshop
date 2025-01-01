@@ -1,0 +1,41 @@
+<div class="container">
+  <h4>Posts</h4>
+<table class="table table-stripped">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>View/Update/Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts">
+        <td>{{ post.id }}</td>
+        <td>{{ post.title }}</td>
+         <td>
+          <button
+          type="button"
+          class="btn btn-success"
+          (click)="viewPost(post.id)"
+        >
+         View
+        </button> |
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="updatePost(post.id)"
+          >
+            Update
+          </button> |
+      <button
+            type="button"
+            class="btn btn-danger"
+            (click)="deletePost(post.id)"
+          >
+            Delete
+          </button>
+        </td> 
+      </tr>
+    </tbody>
+  </table>
+</div>

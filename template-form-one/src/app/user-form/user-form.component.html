@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+      <h3>Registration / Update Form</h3>
+    </div>
+    <form #userForm = "ngForm" (ngSubmit)="onSubmit(userForm)">
+     Form : {{userForm.value | json}}
+      ts file data: {{user | json}}
+      <div class="form-group mt-4">
+        <label >Name</label>
+        <input type="text" class="form-control" name="name" [(ngModel)] = user.name>
+      </div>
+      <div class="form-group mt-4">
+        <label>Email</label>
+        <input type="email" class="form-control" name="email" [(ngModel)] = user.email>
+      </div>
+      <div class="form-group mt-4">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </form>
+  </div>

@@ -4,8 +4,7 @@ import { Inject, Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TestService {
-  //constructor(){}
- // constructor(@Inject('MY_TOKEN') private _param: any) { }
+  //constructor(@Inject('MY_TOKEN') private _param: any) { }
   somefun(){
     console.log("This is message from test service")
   }

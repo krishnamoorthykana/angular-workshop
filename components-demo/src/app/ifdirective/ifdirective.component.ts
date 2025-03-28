@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-ifdirective',
   template: `
-  <div *ngIf = "true">This is visible</div>
+  <div *ngIf = "false">This is visible</div>
   <div *ngIf = "flag">Test content</div>
   <button (click)="showHide()">Click me</button>
   <div *ngIf = "hide">Test Content 1</div><br><br>
@@ -26,7 +26,7 @@ export class IfdirectiveComponent {
   flag=true
   hide = false
   showName = false
-  another = false
+  another = true
   showHide(){
     this.hide = !this.hide
   }

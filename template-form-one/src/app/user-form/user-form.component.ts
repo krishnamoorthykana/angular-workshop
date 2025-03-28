@@ -12,5 +12,7 @@ export class UserFormComponent {
     console.log("Two way binding in form example")
     console.log(userForm)
     console.log(userForm.value)
+    console.log(this.user.name)
+    console.log(this.user.email)
   }
 }

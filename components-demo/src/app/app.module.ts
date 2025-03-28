@@ -15,6 +15,8 @@ import { SwitchdirectiveComponent } from './switchdirective/switchdirective.comp
 import { FordirectiveComponent } from './fordirective/fordirective.component';
 import { ParentcomponentComponent } from './parentcomponent/parentcomponent.component';
 import { ChildcomponentComponent } from './childcomponent/childcomponent.component';
+import { OutputchildComponent } from './outputchild/outputchild.component';
+import { OutputparentComponent } from './outputparent/outputparent.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ChildcomponentComponent } from './childcomponent/childcomponent.compone
     SwitchdirectiveComponent,
     FordirectiveComponent,
     ParentcomponentComponent,
-    ChildcomponentComponent
+    ChildcomponentComponent,
+    OutputchildComponent,
+    OutputparentComponent
   ],
   imports: [
     BrowserModule,

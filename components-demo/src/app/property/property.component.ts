@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-property',
   template: `
   <h3>property works!</h3>
-  <button disabled="true">Click me1</button><br><br>
+  <button disabled="false">Click me1</button><br><br>
   <button [disabled]="isDisabled">Click me2</button><br><br>
   <img [src]="imagePath" width="300" />
   `
